@@ -1,0 +1,20 @@
+#On linux the video capture feature works only with a Python2 installation
+#Update linux -> sudo apt update 
+#Upgrade linux -> sudo apt upgrade
+#Install python2 -> sudo apt install python2
+#Check version of python2 -> python2 -V
+#Update Conda navigator & updater -> conda update anaconda-navigator 
+#Update Conda navigator & updater-> conda update navigator-updater
+#Create Conda Environment for python2 -> conda create --name py2 python=2.7.18
+#Create Conda Environment for python3 -> conda create --name py3 python=3.8.5
+#Activate python2 environemnt -> conda activate py2
+#Deactive pyhton2 environment -> conda deactivate py2
+#Check installed libraries -> conda list
+#Install opencv with correct version -> conda install -c conda-forge opencv=4.1.0
+#Check location(path) of conda environment interpreter -> which python
+#Copy path and set it as the interpreter in your VS Code
+#Run Program
+
+#INSTALL ANY LIBRARY -> conda install -c conda-forge libname
+
+#Install pathlib -> conda install -c conda-forge pathlib
