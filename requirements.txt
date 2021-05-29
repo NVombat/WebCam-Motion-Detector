@@ -18,3 +18,5 @@
 #INSTALL ANY LIBRARY -> conda install -c conda-forge libname
 
 #Install pathlib -> conda install -c conda-forge pathlib
+#Install pandas -> conda install -c conda-forge pandas
+#Install bokeh for data visualisation -> conda install -c conda-forge bokeh
