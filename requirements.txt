@@ -20,3 +20,6 @@
 #Install pathlib -> conda install -c conda-forge pathlib
 #Install pandas -> conda install -c conda-forge pandas
 #Install bokeh for data visualisation -> conda install -c conda-forge bokeh
+
+#INSTALL LIBRARIES FOR WHATSAPP
+#Install selenium -> conda install -c conda-forge selenium
