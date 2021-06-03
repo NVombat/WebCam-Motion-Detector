@@ -23,3 +23,6 @@
 
 #INSTALL LIBRARIES FOR WHATSAPP
 #Install selenium -> conda install -c conda-forge selenium
+
+#On PYTHON 3.4 or greater
+#Install MTCNN -> conda install -c conda-forge mtcnn

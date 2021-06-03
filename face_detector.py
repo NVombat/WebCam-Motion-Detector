@@ -6,7 +6,7 @@ face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 
 #Using grayscale increases accuracy of finding faces
 #Read image using cv2 library
-img = cv2.imread("Practice/images/news.jpg")
+img = cv2.imread("Practice/images/face.jpg")
 #Convert the image to grayscale
 gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
@@ -18,6 +18,9 @@ print(faces)
 for x,y,w,h in faces:
     #Draw a rectangle around the faces and give it a color and width
     img = cv2.rectangle(img, (x,y), (x+w,y+h), (0,255,0), 3)
+
+# # Resize the image to quarter the original size using shape attribute
+# resized_img = cv2.resize(img,(int(img.shape[1]/4), int(img.shape[0]/4)))
 
 #Show the image with the rectangle
 cv2.imshow("Detected Face", img)
