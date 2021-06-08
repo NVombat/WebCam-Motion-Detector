@@ -97,9 +97,7 @@ for i in range(0, len(time_list), 2):
 #Write the dataframe containing timestamps to a csv file
 df.to_csv("times.csv", mode='a', header=False)
 
-#This makes sure the camera is released
 video.release()
-#Destroy the display window
 cv2.destroyAllWindows()
 
 

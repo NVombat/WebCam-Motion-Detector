@@ -1,16 +1,14 @@
-#Import libraries
 import numpy as np
 import cv2
 
 #Creates a cascade classifier object which allows us to search for a full body in an image
 full_body_cascade = cv2.CascadeClassifier('/home/nvombat/Desktop/WebCam-Motion-Detector/haarcascade_fullbody_default.xml')
 
-#Read image using cv2 library
 img = cv2.imread("Practice/images/people1.jpg")
 #print(type(img))
 #print(img)
 
-# Resize the image to quarter the original size using shape attribute
+# Resize the image to quarter the original size
 resized_img = cv2.resize(img,(int(img.shape[1]/4), int(img.shape[0]/4)))
 
 #Convert the image to grayscale
@@ -27,11 +25,10 @@ for (x,y,w,h) in bodies:
     #Draw a rectangle around the bodies and give it a color and width
     resized_img = cv2.rectangle(resized_img, (x,y), (x+w,y+h), (0,255,255), 10)
 
-# # Resize the image to quarter the original size using shape attribute
+# Resize the image to quarter the original size
 # resized_img = cv2.resize(img,(int(img.shape[1]/4), int(img.shape[0]/4)))
 #resized_img = cv2.resize(img, (100,100))
 
-#Show the image with the rectangle
 cv2.imshow('Detected Bodies',resized_img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()

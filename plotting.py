@@ -30,5 +30,4 @@ quad_graph = fig.quad(left='Start', right='End', bottom=0, top=1, color="green",
 
 #Create the output file
 output_file("motion_graph.html")
-#Display graph
 show(fig)

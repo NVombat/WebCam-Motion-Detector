@@ -1,13 +1,10 @@
-#Import libraries
 import cv2
 
 #Creates a cascade classifier object which allows us to search for a face in an image
 face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 
-#Using grayscale increases accuracy of finding faces
-#Read image using cv2 library
+#Using grayscale increases accuracy of finding faces so Convert the image to grayscale
 img = cv2.imread("Practice/images/face.jpg")
-#Convert the image to grayscale
 gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 #Use the classifier to detect faces
@@ -22,7 +19,6 @@ for x,y,w,h in faces:
 # # Resize the image to quarter the original size using shape attribute
 # resized_img = cv2.resize(img,(int(img.shape[1]/4), int(img.shape[0]/4)))
 
-#Show the image with the rectangle
 cv2.imshow("Detected Face", img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
