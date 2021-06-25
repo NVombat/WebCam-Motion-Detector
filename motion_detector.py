@@ -22,7 +22,7 @@ while True:
     check, frame = video.read()
     # print(check)
     # print(frame)
-
+    
     #Status checks if there is a change of state -> object in motion or not
     status=0
     #Convert the frame to grayscale and blur it
@@ -48,7 +48,7 @@ while True:
     #Filter out the contours -> Keep only specific values
     for contour in cntrs:
         #Filter by area of contour
-        if cv2.contourArea(contour) < 10000:
+        if cv2.contourArea(contour) < 5000:
             continue
         #Change status to 1 as soon as an object enters the screen
         status=1
