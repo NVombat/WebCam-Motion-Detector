@@ -3,7 +3,7 @@
 ---
 
 ## Webcam Motion Detector:
-Uses OpenCV & HaarXMLCascades to detect motion. 
+Uses OpenCV & HaarXMLCascades to detect motion. A bounding rectangle is drawn around the object recognized as being in motion.
 
 ![Screenshot from 2021-08-02 09-38-09](https://user-images.githubusercontent.com/63743496/127805683-4451e944-c1f8-4f9e-ba5e-54f4809c2c76.png)
 ![Screenshot from 2021-08-02 09-38-22](https://user-images.githubusercontent.com/63743496/127805705-6da0c529-0bc5-45b6-83b1-e2f620e7ff94.png)
@@ -19,7 +19,7 @@ The timestamps when the motion occurs are logged and plotted using the Bokeh Lib
 ---
 
 ## Face Detector:
-Face Detection using OpenCV & HaarXMLCascades
+Face Detection using OpenCV & HaarXMLCascades. A bounding rectangle is drawn around the detected face.
 
 ![Screenshot from 2021-08-02 09-49-16](https://user-images.githubusercontent.com/63743496/127805773-f87fec2f-e43c-4457-a4fc-8df022764e5f.png)
 
